@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+
+  <body>
+        <div class="container py-5">
+            <!-- Bai tap 1 -->
+            <div class="py-4">
+                <h2 class="pb-3">Bài tập 1: tính lương</h2>
+                    <div class="form-group mb-0">
+                        <input type="text" class="form-control" id="ngayCong" placeholder="Nhập vào số ngày công">
+                    </div>
+                    <button onclick="tinhLuong()" class="btn btn-success my-2">
+                        Nhập
+                    </button>
+                    <br>
+                    <p class="d-inline-block">Số tiền lương là: </p>
+                    <p id="showArea" class="d-inline-block font-weight-bold">0</p>
+                    <p class="d-inline-block"> VNĐ</p>
+            </div>
+
+
+
+            <!-- Bai tap 2 -->
+            <div class="py-4">
+                <h2 class="pb-3">Bài tập 2: tính trung bình cộng</h2>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="so1" placeholder="Nhập vào số thứ nhất">
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="so2" placeholder="Nhập vào số thứ hai">
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="so3" placeholder="Nhập vào số thứ ba">
+                    </div>
+                   
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="so4" placeholder="Nhập vào số thứ tư">
+                    </div>
+                
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="so5" placeholder="Nhập vào số thứ năm">
+                    </div>
+                    <button onclick="trungBinhCong()" class="btn btn-success my-2">
+                        Nhập
+                    </button>
+                    <br>
+                    <p class="d-inline-block">Trung bình cộng là: </p>
+                    <p id="showArea2" class="d-inline-block font-weight-bold">0</p>
+            </div>
+
+
+
+            <!-- Bai tap 3 -->
+            <div class="py-4">
+                <h2 class="pb-3">Bài tập 3: quy đổi tiền</h2>
+                    <div class="form-group mb-0">
+                        <input type="text" class="form-control" id="soTien" placeholder="Nhập vào số tiền cần quy đổi">
+                    </div>
+                    <button onclick="doiTien()" class="btn btn-success my-2">
+                        Nhập
+                    </button>
+                    <br>
+                    <p class="d-inline-block">Số tiền sau khi quy đổi là: </p>
+                    <p id="showArea3" class="d-inline-block font-weight-bold">0</p>
+                    <p class="d-inline-block"> VNĐ</p>
+            </div>
+
+
+
+            <!-- Bai tap 4 -->
+            <div class="py-4">
+                <h2 class="pb-3">Bài tập 4: tính chu vi hình chữ nhật</h2>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="chieuDai" placeholder="Nhập vào chiều dài">
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="chieuRong" placeholder="Nhập vào chiều rộng">
+                    </div>
+
+                    <button onclick="chuVi()" class="btn btn-success my-2">
+                        Nhập
+                    </button>
+                    <br>
+                    <p class="d-inline-block">Chu vi hình chữ nhật là: </p>
+                    <p id="showArea4" class="d-inline-block font-weight-bold">0</p>
+            </div>
+
+
+
+            <!-- Bai tap 5 -->
+            <div class="py-4">
+                <h2 class="pb-3">Bài tập 5: tính tổng hai ký số</h2>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="soLieu" placeholder="Nhập số">
+                    </div>
+                    <button onclick="tinhTong()" class="btn btn-success my-2">
+                        Nhập
+                    </button>
+                    <br>
+                    <p class="d-inline-block">Tổng hai ký số là: </p>
+                    <p id="showArea5" class="d-inline-block font-weight-bold">0</p>
+            </div>
+
+
+            
+        </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
